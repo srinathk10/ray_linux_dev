@@ -1,5 +1,6 @@
 name: myenv
 channels:
+  - defaults
   - conda-forge
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
@@ -7,10 +8,29 @@ dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
   - alsa-lib=1.2.12=h4ab18f5_0
+  - aws-c-auth=0.7.31=hcdce11a_5
+  - aws-c-cal=0.7.4=hd3f4568_4
+  - aws-c-common=0.9.31=hb9d3cd8_0
+  - aws-c-compression=0.2.19=hf20e7d7_4
+  - aws-c-event-stream=0.5.0=h72d8268_0
+  - aws-c-http=0.8.10=h6bb76cc_5
+  - aws-c-io=0.14.20=h389d861_2
+  - aws-c-mqtt=0.10.7=had056f2_5
+  - aws-c-s3=0.7.0=hc85afc5_0
+  - aws-c-sdkutils=0.1.19=hf20e7d7_6
+  - aws-checksums=0.1.20=hf20e7d7_3
+  - aws-crt-cpp=0.29.0=h07ed512_0
+  - aws-sdk-cpp=1.11.407=h9c41b47_6
+  - azure-core-cpp=1.14.0=h5cfcd09_0
+  - azure-identity-cpp=1.10.0=h113e628_0
+  - azure-storage-blobs-cpp=12.13.0=h3cf044e_1
+  - azure-storage-common-cpp=12.8.0=h736e048_1
+  - azure-storage-files-datalake-cpp=12.12.0=ha633028_1
   - bazel=6.5.0=h1f09bfa_1
+  - blas=1.0=openblas
   - bzip2=1.0.8=h4bc722e_7
   - c-ares=1.34.2=heb4867d_0
-  - ca-certificates=2024.8.30=hbcca054_0
+  - ca-certificates=2024.9.24=h06a4308_0
   - cairo=1.18.0=hebfffa5_3
   - font-ttf-dejavu-sans-mono=2.37=hab24e00_0
   - font-ttf-inconsolata=3.000=h77eed37_0
@@ -20,7 +40,9 @@ dependencies:
   - fonts-conda-ecosystem=1=0
   - fonts-conda-forge=1=0
   - freetype=2.12.1=h267a509_2
+  - gflags=2.2.2=h6a678d5_1
   - giflib=5.2.2=hd590300_0
+  - glog=0.7.1=hbabe93e_0
   - graphite2=1.3.13=h59595ed_1003
   - harfbuzz=9.0.0=hda332d3_1
   - icu=75.1=he02047a_0
@@ -30,42 +52,71 @@ dependencies:
   - ld_impl_linux-64=2.43=h712a8e2_2
   - lerc=4.0.0=h27087fc_0
   - libabseil=20240722.0=cxx17_h5888daf_1
+  - libarrow=18.0.0=ha5db6c2_0_cpu
+  - libarrow-acero=18.0.0=h5888daf_0_cpu
+  - libarrow-dataset=18.0.0=h5888daf_0_cpu
+  - libarrow-substrait=18.0.0=he882d9a_0_cpu
+  - libbrotlicommon=1.1.0=hb9d3cd8_2
+  - libbrotlidec=1.1.0=hb9d3cd8_2
+  - libbrotlienc=1.1.0=hb9d3cd8_2
+  - libcrc32c=1.1.2=h6a678d5_0
   - libcups=2.3.3=h4637d8d_4
+  - libcurl=8.10.1=hbbe4b11_0
   - libdeflate=1.22=hb9d3cd8_0
   - libedit=3.1.20191231=he28a2e2_2
+  - libev=4.33=h7f8727e_1
+  - libevent=2.1.12=hdbd6064_1
   - libexpat=2.6.3=h5888daf_0
   - libffi=3.4.2=h7f98852_5
   - libgcc=14.2.0=h77fa898_1
   - libgcc-ng=14.2.0=h69a702a_1
+  - libgfortran-ng=11.2.0=h00389a5_1
+  - libgfortran5=11.2.0=h1234567_1
   - libglib=2.82.2=h2ff4ddf_0
   - libgomp=14.2.0=h77fa898_1
+  - libgoogle-cloud=2.30.0=h438788a_0
+  - libgoogle-cloud-storage=2.30.0=h0121fbd_0
   - libgrpc=1.65.5=hf5c653b_0
   - libiconv=1.17=hd590300_2
   - libjpeg-turbo=3.0.0=hd590300_1
+  - libnghttp2=1.64.0=h161d5f1_0
   - libnsl=2.0.1=hd590300_0
+  - libopenblas=0.3.21=h043d6bf_0
+  - libparquet=18.0.0=h6bd9018_0_cpu
   - libpng=1.6.44=hadc24fc_0
   - libprotobuf=5.27.5=h5b01275_2
   - libre2-11=2024.07.02=hbbce691_1
   - libsqlite=3.47.0=hadc24fc_1
+  - libssh2=1.11.0=h0841786_0
   - libstdcxx=14.2.0=hc0a3c3a_1
   - libstdcxx-ng=14.2.0=h4852527_1
+  - libthrift=0.21.0=h0e7cc3e_0
   - libtiff=4.7.0=he137b08_1
+  - libutf8proc=2.8.0=h166bdaf_0
   - libuuid=2.38.1=h0b41bf4_0
   - libwebp-base=1.4.0=hd590300_0
   - libxcb=1.17.0=h8a09558_0
   - libxcrypt=4.4.36=hd590300_1
+  - libxml2=2.13.4=hb346dea_2
   - libzlib=1.3.1=hb9d3cd8_2
+  - lz4-c=1.9.4=h6a678d5_1
   - ncurses=6.5=he02047a_1
+  - numpy-base=2.0.1=py39h8a23956_1
   - openjdk=11.0.25=he018374_0
   - openssl=3.3.2=hb9d3cd8_0
+  - orc=2.0.2=h690cf93_1
   - pcre2=10.44=hba22ea6_2
   - pip=24.3.1=pyh8b19718_0
   - pixman=0.43.2=h59595ed_0
   - pthread-stubs=0.4=hb9d3cd8_1002
+  - pyarrow-core=18.0.0=py39h6117c73_0_cpu
   - python=3.9.20=h13acc7a_1_cpython
+  - python_abi=3.9=5_cp39
   - re2=2024.07.02=h77b4e00_1
   - readline=8.2=h8228510_1
+  - s2n=1.5.5=h3931f03_0
   - setuptools=75.3.0=pyhd8ed1ab_0
+  - snappy=1.2.1=h6a678d5_0
   - tk=8.6.13=noxft_h4845f30_101
   - wheel=0.44.0=pyhd8ed1ab_0
   - xorg-libice=1.1.1=hb9d3cd8_1
@@ -104,6 +155,7 @@ dependencies:
       - colorful==0.5.6
       - cryptography==43.0.1
       - cupy-cuda12x==13.3.0
+      - dask==2024.8.0
       - deprecated==1.2.14
       - distlib==0.3.9
       - dm-tree==0.1.8
@@ -112,14 +164,14 @@ dependencies:
       - fastapi==0.115.0
       - fastrlock==0.8.2
       - filelock==3.16.1
-      - flake8==3.9.1
+      - flake8==7.1.1
       - frozenlist==1.4.1
       - fsspec==2024.9.0
       - google-api-core==2.21.0
       - google-auth==2.35.0
       - googleapis-common-protos==1.65.0
       - grpcio==1.66.2
-      - gymnasium==0.28.1
+      - gymnasium==1.0.0
       - h11==0.14.0
       - idna==3.10
       - imageio==2.35.1
@@ -132,10 +184,11 @@ dependencies:
       - jsonschema-specifications==2024.10.1
       - lazy-loader==0.4
       - linkify-it-py==2.0.3
+      - locket==1.0.0
       - lz4==4.3.3
       - markdown-it-py==3.0.0
       - markupsafe==3.0.1
-      - mccabe==0.6.1
+      - mccabe==0.7.0
       - mdit-py-plugins==0.4.2
       - mdurl==0.1.2
       - memray==1.14.0
@@ -157,6 +210,7 @@ dependencies:
       - opentelemetry-semantic-conventions==0.48b0
       - packaging==24.1
       - pandas==2.2.3
+      - partd==1.4.2
       - pathspec==0.12.1
       - pillow==10.4.0
       - platformdirs==4.3.6
@@ -165,15 +219,16 @@ dependencies:
       - propcache==0.2.0
       - proto-plus==1.24.0
       - protobuf==4.25.5
+      - psutil==6.1.0
       - py-spy==0.3.14
       - pyarrow==17.0.0
       - pyasn1==0.6.1
       - pyasn1-modules==0.4.1
-      - pycodestyle==2.7.0
+      - pycodestyle==2.12.1
       - pycparser==2.22
       - pydantic==2.9.2
       - pydantic-core==2.23.4
-      - pyflakes==2.3.1
+      - pyflakes==3.2.0
       - pygments==2.18.0
       - pyopenssl==24.2.1
       - pytest==8.3.3
@@ -196,6 +251,7 @@ dependencies:
       - textual==0.83.0
       - tifffile==2024.8.30
       - tomli==2.0.2
+      - toolz==1.0.0
       - tqdm==4.66.5
       - typer==0.12.5
       - typing-extensions==4.12.2
