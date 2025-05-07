@@ -1,6 +1,6 @@
 # ray_linux_dev
 
-Apache Ray containerized developer environment for Linux
+Ray containerized developer environment for Linux
 
 
 ## Install Docker for Linux
@@ -8,7 +8,7 @@ Apache Ray containerized developer environment for Linux
 Install your favourite dev tools for Linux and Docker before proceeding.
 
 
-## Clone Apache Ray
+## Clone Ray
 
 Follow the instructions [here](https://docs.ray.io/en/latest/ray-contribute/development.html#id1) and clone the ray project.
 
