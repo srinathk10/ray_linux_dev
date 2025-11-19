@@ -7,9 +7,6 @@ ORIGINAL_DIR=$(pwd)
 REPO_ROOT=$(git rev-parse --show-toplevel)
 cd "$REPO_ROOT" || { echo "Failed to enter $REPO_ROOT directory"; exit 1; }
 
-# Formatting
-./scripts/format.sh
-
 # Precommit
 ../scripts/precommit.sh
 

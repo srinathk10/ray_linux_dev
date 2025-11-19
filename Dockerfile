@@ -69,6 +69,10 @@ WORKDIR /home/${USER_NAME}/myworkspace
 # Copy environment.yml file
 COPY env/environment.yml .
 
+# Accept conda Terms of Service for required channels (as the target user)
+RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main && \
+    conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+
 # Create Conda environment
 RUN conda env create -f environment.yml
 
